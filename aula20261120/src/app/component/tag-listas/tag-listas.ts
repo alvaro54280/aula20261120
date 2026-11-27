@@ -20,6 +20,8 @@ export class TagListas {
   // Bolean
   nomeVariavelBoleanFalse: boolean = false;
   nomeVariavelBoleanTrue: boolean = true;
+
+  nomeArrayString: string[] = ['0','1','2'];
   //
   // Este é construtor
   constructor() {
@@ -31,9 +33,13 @@ export class TagListas {
     console.log('minha 3ºvariavel sendo impressa: ', this.nomeVariavelNumber);
     console.log('minha 4ºvariavel sendo impressa: ', this.nomeVariavelBoleanFalse);
     console.log('minha 5ºvariavel sendo impressa: ', this.nomeVariavelBoleanTrue);
-
+    this.meotdo_imprimir();
     //Criando error de tipagens
     //this.nomeVariavelNumber = "roberto";
     //this.nomeVariavelBoleanTrue = 10;
   } // FIM DO CONSTRUTOR
+
+  meotdo_imprimir(){
+    console.log("metodo imprimir: ", this.nomeVariavelString)
+  }
 } //Fim da classe
